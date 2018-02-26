@@ -36,6 +36,10 @@ $(document).ready(function() {
            else if(i%3===0) {
             output.push("ping");
           }
+          // divisibility of 5
+          else if(i%5===0){
+            output.push("pong")
+          }
   
      }
     divisibility3();
