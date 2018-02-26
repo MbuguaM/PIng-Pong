@@ -32,6 +32,10 @@ $(document).ready(function() {
         if(i%3===0 && i%5===0) {
              output.push("pingpong")
            }
+           //testing for divisiblity by 3 only
+           else if(i%3===0) {
+            output.push("ping");
+          }
   
      }
     divisibility3();
