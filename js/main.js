@@ -23,6 +23,25 @@ $(document).ready(function() {
          }
     };
     rangeFinder();    
+    //changed numbers store array
+    var output=[];
+    // the tester for loo
+    function divisibility3(){
+      for(var i=1;i<=numbers.length;i++){
+        //testing the divisibility of 3 and 5  
+        if(i%3===0 && i%5===0) {
+             output.push("pingpong")
+           }
+  
+     }
+    divisibility3();
+    console.log(output);
+    finalOutput();
+ 
+ 
+ 
+    e.preventDefault();
+ 
 
    e.preventDefault();
  });
