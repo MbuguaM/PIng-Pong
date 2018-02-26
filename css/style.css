@@ -1,9 +1,58 @@
 .container-fluid{
     padding:0px;
+    margin:0px;
 }
- .jumbotron{
+#header{
+   
+}
+.jumbotron{
     width:100%;
     height:200px;
     text-align:center;
     color:orangered;
+    margin:0px;  
+    background-color:black;
+    opacity:0.7;
+}
+body{
+    background-image:url(../images/background4.jpg);
+    color:white;
+}
+h4, h2{
+    color: orangered;
+}
+#body{
+ width:100%;
+ padding:0px;
+ background-color: 
+}
+#sideBar{
+    padding-top:20px;
+    text-align:center;
+    margin:10px;
+    
+}
+
+ol {
+    list-style-type:none;
+    padding:0px;
+}
+ul{
+    list-style-type:none;
+}
+#header, #rightColumn, #sideBar{
+    background-color:black;
+    opacity:0.7;
+}
+#rightColumn{
+   padding-top:0px;
+   text-align:center; 
+   margin:10px  
+}
+#rightColumn input,#rightColumn button{
+    color:black;
+   
+ }
+#header{
+    margin:10px;
 }

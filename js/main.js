@@ -8,24 +8,31 @@ $(document).ready(function() {
      //search for the event
      $("#button").click(function(e){
            //fetch input from the input field
-           var input = parseInt($("#input").val());
-        //outputing the answer
+      var input = parseInt($("#input").val());
+         
+      //outputing the answer
         function finalOutput(){
           for(var i = 0;i<=(output.length-1);i++) {
             $("ul").append("<li>"+ output[i] +"</li>");
           } 
         }
+  
+   
 
 
-
-       // bussiness logic
-     //array to store the numbers
-     var numbers=[];
-     //getting the numbers in the range of 1- user's input
+       // bussiness logic  
+          //array to store the numbers
+       var numbers=[];
+     //limiting the user input
     function rangeFinder() {
-         for(var i =1;i<=input;i++){
+      if(input<0 || input >200){
+        alert("Kindly enter a number between 0-200")
+      }
+      else{
+        for(var i =1;i<=input;i++){
           numbers.push(i);
          }
+      }    
     };
     rangeFinder();    
     //changed numbers store array
@@ -54,6 +61,8 @@ $(document).ready(function() {
     divisibility3();
     console.log(output);
     finalOutput();
+  
+   
     e.preventDefault();
 });
 });
