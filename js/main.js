@@ -40,17 +40,15 @@ $(document).ready(function() {
           else if(i%5===0){
             output.push("pong")
           }
-  
-     }
+          // maintaing all the other numbers
+          else {
+            output.push(i);
+          }
+      };
+    }
     divisibility3();
     console.log(output);
     finalOutput();
- 
- 
- 
     e.preventDefault();
- 
-
-   e.preventDefault();
- });
+});
 });
