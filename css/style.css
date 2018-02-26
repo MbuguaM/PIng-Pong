@@ -1,0 +1,9 @@
+.container-fluid{
+    padding:0px;
+}
+ .jumbotron{
+    width:100%;
+    height:200px;
+    text-align:center;
+    color:orangered;
+}
