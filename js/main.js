@@ -9,7 +9,12 @@ $(document).ready(function() {
      $("#button").click(function(e){
            //fetch input from the input field
            var input = parseInt($("#input").val());
-
+        //outputing the answer
+        function finalOutput(){
+          for(var i = 0;i<=(output.length-1);i++) {
+            $("ul").append("<li>"+ output[i] +"</li>");
+          } 
+        }
 
 
 
